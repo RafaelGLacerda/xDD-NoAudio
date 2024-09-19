@@ -1,6 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+.espaco{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
 .jump{
-    
-    width: 1600px;
-    height: 750px;
+    position: absolute;
+    bottom: 0;
+    width: 800px;
+    animation: jump-ani 90ms infinite;
+}
+
+@keyframes jump-ani {
+    from{
+        left: -400px;
+    }
+    to{
+        left: 500px;
+    }
     
 }
